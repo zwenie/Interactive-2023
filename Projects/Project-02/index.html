@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>Calendar 2023</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head> 
+<link rel="stylesheet" href="style.css">
+</head>  
+<body>
+  <h1 class="logo">2023 Monthly 🌷 ✍🏻 by Zijun Wen</h1>
+  <div class="toptext"><span>Drag dot</span>
+
+  </div>
+<input min="5" max="50" value="5" step="1" type="range" class="slider">
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">🌷</button>
+  <div id="myDropdown" class="dropdown-content">
+    <p>
+ <a href="zwen@cca.edu" target="_blank">Zijun's Email</a><br>
+    </p>
+  </div>
+</div>
+
+<div style="--width: 9rem" class="feed-of-images">
+  <figure><img src="01.png"></figure>
+  <figure><img src="02.png"></figure>
+  <figure><img src="03.png"></figure>
+  <figure><img src="04.png"></figure>
+  <figure><img src="05.png"></figure>
+  <figure><img src="06.png"></figure>
+  <figure><img src="07.png"></figure>
+  <figure><img src="08.png"></figure>
+  <figure><img src="09.png"></figure>
+  <figure><img src="10.png"></figure>
+  <figure><img src="11.png"></figure>
+  <figure><img src="12.png"></figure>
+
+<aside class="">
+    <div class="aside-parent"></div>
+  </aside>
+
+
+<script>
+
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+const images = document.querySelectorAll('figure img')
+const figures = document.querySelectorAll('figure')
+const aside = document.querySelector('aside')
+const asideImg = document.querySelector('aside img')
+const input = document.querySelector('input')
+const feed = document.querySelector('.feed-of-images')
+input.addEventListener('input', function (e) {
+ changeImages(e.target.value)
+})
+function changeImages (value) { 
+  if (window.innerWidth < 600) return false
+  const v = value
+  feed.style.setProperty('--width', `${v}rem`)
+}
+figures.forEach(i => {
+  let clonedChild
+  let video = false
+  if (i.querySelector('video')) {
+    clonedChild = i.querySelector('video').cloneNode(true)
+    video = true
+  }
+  if (i.querySelector('img')) clonedChild = i.querySelector('img').cloneNode(true)
+  i.addEventListener('click', () => {
+    aside.classList.add('poppin')
+    aside.innerHTML = ""
+    aside.appendChild(clonedChild)
+    if(video) clonedChild.play()
+  })
+})
+aside.addEventListener('click', () => {
+  aside.classList.remove('poppin')
+})
+changeImages(input.value)
+
+
+</script>
+</body>
+</html>
