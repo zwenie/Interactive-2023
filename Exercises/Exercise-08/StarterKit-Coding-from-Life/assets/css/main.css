@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #DADADA;
+}
+
+
+/* if you want to change the background of your canvas, do it here */
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: lightblue;
+	position: relative;
+	border: solid black 5px;
+}
+
+
+/* this is where you can style the objects in your still life */
+
+.squareee{
+	width: 700px;
+	height: 60px;
+	background: white;
+	position: absolute;
+	top: 370px;
+	left: 60px;
+}
+
+.ovall{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    border-radius: 50%;
+    background: blue;
+    top: 350px;
+	left: 170px;
+}
+
+.circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: lightgoldenrodyellow;
+    top: 200px;
+	left: 200px;
+}
+
+.circlee{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: lightgoldenrodyellow;
+    top: 210px;
+	left: 240px;
+}
+
+.circleee{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: lightgoldenrodyellow;
+    top: 260px;
+	left: 220px;
+}
+
+.circleeee{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: lightgoldenrodyellow;
+    top: 240px;
+	left: 170px;
+}
+
+.circleeeee{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: lightgoldenrodyellow;
+    top: 230px;
+	left: 280px;
+}
+
+.tube{
+	position: absolute;
+	width: 120px;
+    height: 250px;
+    left: 360px;
+    top: 110px;
+    background: seagreen;
+    background: radial-gradient(circle,rgba(0,0,0,0) 32px,rgba(0,0,0,0.06) 32px,rgba(0,0,0,0.06) 40px,rgba(0,0,0,0) 40px,rgba(255,255,255,0) 55px,rgba(255,255,255,0.7) 55px,rgba(255,255,255,0.7) 62px,rgba(255,255,255,0) 62px,rgba(0,0,0,0) 70px,rgba(0,0,0,0.06) 70px);
+    border-radius: 50%
+}
+.oval{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    background: mediumpurple;
+    top: 300px;
+	left: 350px;
+}
+.grass{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: seagreen;
+    top: 220px;
+	left: 390px;
+}
+
+.triangle{
+	position: absolute;
+    top: 300px;
+    left: 416px;
+    width: 21px;
+    height: 18px;
+    background: mediumpurple;
+    transform: rotate(94deg) skew(20deg, 0deg);
+    -ms-transform: rotate(94deg) skew(20deg, 0deg);
+    -webkit-transform: rotate(94deg) skew(20deg, 0deg);
+    border-top-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+
+}
+
+.trianglee{
+	position: absolute;
+    top: 310px;
+    left: 430px;
+    width: 21px;
+    height: 18px;
+    background: mediumpurple;
+    transform: rotate(94deg) skew(20deg, 0deg);
+    -ms-transform: rotate(94deg) skew(20deg, 0deg);
+    -webkit-transform: rotate(94deg) skew(20deg, 0deg);
+    border-top-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+
+}
+
+.triangleee{
+	position: absolute;
+    top: 350px;
+    left: 360px;
+    width: 21px;
+    height: 18px;
+    background: mediumpurple;
+    transform: rotate(94deg) skew(20deg, 0deg);
+    -ms-transform: rotate(94deg) skew(20deg, 0deg);
+    -webkit-transform: rotate(94deg) skew(20deg, 0deg);
+    border-top-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+
+}
+
+.triangleeee{
+	position: absolute;
+    top: 350px;
+    left: 415px;
+    width: 21px;
+    height: 18px;
+    background: mediumpurple;
+    transform: rotate(94deg) skew(20deg, 0deg);
+    -ms-transform: rotate(94deg) skew(20deg, 0deg);
+    -webkit-transform: rotate(94deg) skew(20deg, 0deg);
+    border-top-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+
+}
+
+.square{
+	width: 150px;
+	height: 20px;
+	background: orangered;
+	position: absolute;
+	top: 365px;
+	left: 320px;
+}
+
+.squaree{
+	width: 30px;
+	height: 60px;
+	background: mediumpurple;
+	position: absolute;
+	top: 270px;
+	left: 355px;
+}
+
+
+
