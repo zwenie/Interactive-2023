@@ -1,0 +1,111 @@
+.square{
+  width:100px;
+  height:100px;
+  background-color:red;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+
+  animation-name:move-right;
+  animation-duration:5s;
+  animation-timing-function:ease-out;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+}
+
+@keyframes move-right{
+  from{
+    margin-left:0;
+    background-color:red;
+  }
+  to{
+    margin-left:90%;
+    background-color:green;
+  }
+}
+
+.circle{
+  width:120px;
+  height:120px;
+  background-color:yellow;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  animation-name:grow-bigger;
+  animation-timing-function:linear;
+  animation-duration:2s;
+  animation-direction:forward;
+  animation-iteration-count:infinite;
+}
+@keyframes grow-bigger{
+  0%{
+    transform: scale(1,1);
+  }
+  100%{
+    transform: scale(2,2);
+  }
+}
+
+.blob{
+	animation: blob 2s ease infinite alternate none;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: hotpink;
+
+
+}
+
+
+@keyframes blob{
+	0%{
+		border-radius: 0%;
+		background-color: rebeccapurple;
+		transform: rotate(0deg);
+	}
+
+	50%{
+		border-radius: 0 50 50 0;
+		background-color: red;
+		transform: rotate(45deg);
+}
+
+
+	100%{
+		border-radius: 100%;
+		background-color: red;
+		transform: rotate(90deg);
+}
+}
+
+
+.box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background: green;
+        animation: animate 5s linear infinite;
+    }
+  
+    @keyframes animate {
+        0% {
+            left: 0;
+        }
+  
+        50% {
+            left: 100%;
+        }
+  
+        0% {
+            left: 0;
+        }
+    }
