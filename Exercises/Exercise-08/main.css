@@ -110,13 +110,28 @@ body {
 	left: 350px;
 }
 .grass{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: seagreen;
-    top: 220px;
-	left: 390px;
+    position: absolute;;
+    width: 55px;
+    height: 30px;
+    background: green;
+    top: 250px;
+    left: 390px;
+    border-top-left-radius: 70% 100%;
+    border-bottom-right-radius: 70% 100%;
+    transform: rotate(35deg);
+}
+
+.grasss{
+    position: absolute;;
+    width: 55px;
+    height: 30px;
+    background: green;
+    top: 225px;
+    left: 380px;
+    border-top-left-radius: 70% 100%;
+    border-bottom-right-radius: 70% 100%;
+    transform: rotate(135deg);
+
 }
 
 .triangle{
@@ -183,6 +198,17 @@ body {
 
 }
 
+
+.ovalll {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background: #ea936f;
+    border-radius: 50%;
+    top: 220px;
+    left: 230px;
+}
+
 .square{
 	width: 150px;
 	height: 20px;
@@ -190,7 +216,9 @@ body {
 	position: absolute;
 	top: 365px;
 	left: 320px;
+
 }
+
 
 .squaree{
 	width: 30px;
@@ -199,6 +227,29 @@ body {
 	position: absolute;
 	top: 270px;
 	left: 355px;
+    transform: rotate(-15deg);
 }
+
+.stick{
+    width: 5px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 220px;
+    left: 260px;
 }
+
+.fire {
+  position: absolute;
+  top: 180px;
+  left: 243px;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(ellipse at center, rgba(241,218,54,1) 0%,rgba(255,182,0,1) 35%,rgba(255,0,0,1) 90%,rgba(255,0,0,1) 101%);
+  border-radius: 10% 50% 50% 50%;
+  transform: rotate(45deg);
+}
+
+
+
 
