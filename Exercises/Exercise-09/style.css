@@ -23,6 +23,25 @@ img {
  max-width: 100%;
 }
 
+
+@media screen and (max-width: 1280px) {
+  body{
+    background-color: hotpink;
+  }
+  h1 {
+  font-size: 3re + 3vw;
+  background-color: white;
+}
+p {
+  line-height: 1.5;
+  background-color: #fded02;
+ }
+
+ img{
+  max-width: 100%;
+}
+}
+
 @media screen and (max-width:768px) and (orientation:portrait){
 
  body{
@@ -34,25 +53,6 @@ img {
  }
  p {
   line-height: 1.5;
-  background-color: #fded02;
- }
-
- img{
-  max-width: 100%;
-}
-}
-
-@media screen and (min-device-width:1200px) and (max-device-width:1600px) and (-webkit-min-device-pixel-ratio:1{
-
- body{
-  background-color: hotpink;
- }
- h1 {
-  font-size: 6rem + 6vw;
-  background-color: white;
-}
-p {
-  line-height: 3rem;
   background-color: #fded02;
  }
 
