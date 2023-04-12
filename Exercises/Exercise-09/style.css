@@ -1,6 +1,5 @@
 body{
  width: 100%;
- max-width: 1200px;
  margin: 0 auto;
  background:#fded02;
 }
@@ -43,17 +42,17 @@ img {
 }
 }
 
-@media screen and max-device-width:480px) and (orientation:portrait){
+@media screen and (min-device-width:1200px) and (max-device-width:1600px) and (-webkit-min-device-pixel-ratio:1{
 
  body{
   background-color: hotpink;
  }
  h1 {
-  font-size: 2rem ;
+  font-size: 6rem + 6vw;
   background-color: white;
 }
 p {
-  line-height: 1.5;
+  line-height: 3rem;
   background-color: #fded02;
  }
 
