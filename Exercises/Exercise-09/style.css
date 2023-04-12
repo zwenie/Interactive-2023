@@ -1,0 +1,63 @@
+body{
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ background:#fded02;
+}
+
+section {
+ padding: 20px;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+p {
+ line-height: 1.5;
+ font-family: 'Trebuchet MS', sans-serif;
+}
+
+img {
+ display: block;
+ margin: 0 auto;
+ max-width: 100%;
+}
+
+@media screen and (max-width:768px) and (orientation:portrait){
+
+ body{
+  background-color: black;
+ }
+ h1 {
+  font-size: 3rem;
+  background-color: hotpink;
+ }
+ p {
+  line-height: 1.5;
+  background-color: #fded02;
+ }
+
+ img{
+  max-width: 100%;
+}
+}
+
+@media screen and max-device-width:480px) and (orientation:portrait){
+
+ body{
+  background-color: hotpink;
+ }
+ h1 {
+  font-size: 2rem ;
+  background-color: white;
+}
+p {
+  line-height: 1.5;
+  background-color: #fded02;
+ }
+
+ img{
+  max-width: 100%;
+}
+}
